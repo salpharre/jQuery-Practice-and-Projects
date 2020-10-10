@@ -1,7 +1,5 @@
 # jQuery-Practice-and-Projects
 
-![GitHub last commit](https://img.shields.io/github/last-commit/salpharre/jQuery-Practice-and-Projects)
-
 jQuery review via practice problems and mini-projects. Created for the #100daysofcode challenge
 
 ## Table of Contents
