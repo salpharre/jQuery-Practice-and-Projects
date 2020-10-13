@@ -8,9 +8,8 @@
 </head>
 
 <body>
-    <h3 id="click-me"> CLICK ME! </h3>
+    <button id="click-me">Click Me For Drinks!</button>
     <h1>Drink Selection!</h1>
-    <hr>
 
     <!-- Here we create a generic drink-options div -->
     <div id="drink-options"></div>
@@ -32,8 +31,21 @@
 
     // Using JavaScript programmatically append each drinkList item to the "drink-options" div
     // HINT: you will need a for loop to go over each element in the list
+   
+   // click button makes drink list appear
+    $("#click-me").click(function() {
+        for (let i = 0; i < drinkList.length; i++) {
+        let drink = $("<p>");
+        drink.text(drinkList[i]);
+        $("#drink-options").append(drink);
 
-
+        // this won't work because it loops through the list and stops at the last entry
+        // while constantly replacing that one <p> versus making a new <p> for each one
+        // $("#drink-options").html("<p>" + drinkList[i] + "</p>");
+    };
+    });
+    
+    
 
     </script>
 </body>

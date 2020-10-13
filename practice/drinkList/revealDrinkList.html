@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Content!</title>
+    <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <button id="click-me">Click Me For Drinks!</button>
+    <button id="reset">Reset</button>
+    <div id="no-more">No More Drinks!</div>
+    <h1>Drink Selection!</h1>
+
+    <!-- Here we create a generic drink-options div -->
+    <div id="drink-options"></div>
+
+    <script type="text/javascript">
+
+        $("#no-more").hide();
+
+        // Array holds all of the drinks available
+        var drinkList = [
+            "Coffee: $5",
+            "Espresso: $7",
+            "Cappuccino: $6",
+            "Latte: $4",
+            "Tea: $3",
+            "Ice Coffee: $6",
+            "Ice Espresso: $8",
+            "Ice Latte: $6",
+            "Ice Tea: $4"
+        ];
+
+    // how many drinks there are
+    const drinkAmount = 9;
+    let drinkIndex = 0;
+
+    // click button until entire drinkList appears
+    $("#click-me").click(function() {
+        let drink = $("<p>");
+        drink.text(drinkList[drinkIndex]);
+        $("#drink-options").append(drink);
+        increaseIndex();
+        noMoreDrinks();
+    });
+    
+    function increaseIndex(){
+        return drinkIndex++;
+    }
+
+    function noMoreDrinks(){
+        if (drinkIndex < drinkAmount) {
+            return;
+        } else {
+            $("#no-more").show();
+            $("#click-me").attr("disabled", true);
+        }
+    }
+
+    $("#reset").click(function() {
+        $("#drink-options").empty();
+        $("#click-me").attr("disabled", false);
+        $("#no-more").hide();
+    })
+
+    </script>
+</body>
+</html>
