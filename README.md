@@ -7,6 +7,8 @@ jQuery review via practice problems and mini-projects. Created for the #100dayso
 * [Installation](#installation)
 * [Navigating Repository](#navigating-repository)
     - [Practice](#practice)
+        * [drinklist](#drinklist)
+        * [revealDrinkList](#revealDrinkList)
     - [Mini-projects](#mini-projects)
         * [Scroll Down Page](#scroll-down-page)
 * [Technology](#technology)
@@ -25,12 +27,13 @@ Clicking on any of the links below will take you to the practice problem or mini
 ### Practice
 
 #### Incomplete
-
-[drinklist](https://github.com/salpharre/jQuery-Practice-and-Projects/blob/main/practice/drinklist.html) 
+ 
 
 #### Complete
 
-None yet.
+[drinklist](https://github.com/salpharre/jQuery-Practice-and-Projects/blob/main/practice/drinklist.html)
+
+[revealDrinkList](https://github.com/salpharre/jQuery-Practice-and-Projects/blob/main/practice/revealDrinkList.html)
 
 ### Mini-projects
 
