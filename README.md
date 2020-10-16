@@ -26,14 +26,11 @@ Clicking on any of the links below will take you to the practice problem or mini
 
 ### Practice
 
-#### Incomplete
- 
-
-#### Complete
-
 [drinklist](https://github.com/salpharre/jQuery-Practice-and-Projects/blob/main/practice/drinklist.html)
 
 [revealDrinkList](https://github.com/salpharre/jQuery-Practice-and-Projects/blob/main/practice/revealDrinkList.html)
+
+[sandwichclick](https://github.com/salpharre/jQuery-Practice-and-Projects/blob/main/practice/sandwichclick.html)
 
 ### Mini-projects
 
